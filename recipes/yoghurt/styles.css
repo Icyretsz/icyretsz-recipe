@@ -1,8 +1,23 @@
-@import url(https://db.onlinewebfonts.com/c/aa0978a3bd6a626f739efaff3d30955e?family=Georgia+Pro+W01+Regular); 
+@import url(https://db.onlinewebfonts.com/c/aa0978a3bd6a626f739efaff3d30955e?family=Georgia+Pro+W01+Regular);
 body {
     font-family: 'Georgia Pro W01 Regular', 'Times New Roman', Times, serif;
-    text-align: center;
     background-image: url("../../images/background.jpg");
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    width: 1500px;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #80A7BF ;
 }
 
 ul li {
@@ -10,60 +25,61 @@ ul li {
     text-align:left;
 }
 
-.recipe-card {
-    display: inline-block;
-    margin-top: 20px;
-    width: 700px;
-    line-height: 1.25;
-}
-
 img {
-    width: 700px;
+    width: 100%;
     height: auto;
-    display: block;
     margin: 0 auto;
 }
 
 .recipe-card h3 {
     text-align: center;
     margin: 0px;
-    position: relative;
     font-size: 30px;
 }
 
-.recipe-card h3::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: #000000; 
-    position: absolute;
-    bottom: -5px; 
+.nutrition {
+    background-color: #A69F80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    text-align: center;
 }
 
-.nutrition {
-    background-color: #91D2D9;
+.nutrition ul {
+    display: flex;
+    gap: 10px;
 }
 
 .ingredient {
-    background-color: #8C3F54;
+    background-color: #D98F07;
+}
+
+.ingredient h3,
+.ingredient h4 {
+    margin: 0;
+}
+
+.direction h3 {
+    margin: 0;
 }
 
 .direction {
-    background-color: #F2B6CC;
+    background-color: #8C3F54;
 }
 
-.nutrition, .direction, .ingredient {
-    text-align: center;
-    padding: 20px;
+.direction, .ingredient {
+    padding: 15px;
     margin: 0px auto;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }
 
 .description {
-    width: 680px;
     margin: 0 auto;
-    background-color: #A69F80;
+    background-color: #D9751E;
     padding: 10px;
 }
 
